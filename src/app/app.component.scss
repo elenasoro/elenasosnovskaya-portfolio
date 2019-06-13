@@ -1,3 +1,25 @@
-p {
-  font-family: Lato;
+.portfolio-title {
+  display: flex;
+  align-items: center;
+  p {
+    font-size: 1.5em;
+    color: #444;
+  }
+  a {
+    color: #369;
+  }
+}
+
+.contacts {
+  text-align: left;
+  li {
+    position: relative;
+    right: 40px;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  margin-right: 2em;
 }

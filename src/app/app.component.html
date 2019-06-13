@@ -1,8 +1,29 @@
-<div>
-  <img src="" alt="">
-  <p></p>
-  <ul>
-	  <li><a href="">Github</a></li>
-    <li><a href="">Other</a></li>
-  </ul>
+<div class="portfolio-title">
+  <img src="https://cdn.jsdelivr.net/gh/elenasoro/elenasosnovskaya-portfolio@master/portfolio-avatar.png" alt="avatar" class="avatar">
+  <div class="contacts">
+    <p class="name">{{ name }}</p>
+    <ul class="contact-links">
+	    <li><a href="{{githubLink}}">Github</a></li>
+      <li><a href="{{linkedinLink}}">LinkedIn</a></li>
+    </ul></div>
+  </div>
+<hr>
+<div class="portfolio-bio">
+  <h2>Bio</h2>
+  <div class="portfolio-experience">
+    <h3>Experience</h3>
+    <ul class="projects">
+      <li *ngFor="let project of projects">
+        {{ project.name }} - {{ project.year }}
+      </li>
+    </ul>
+  </div>
+  <div class="portfolio-projects">
+    <h3>Projects</h3>
+    <ul class="project-links">
+      <li *ngFor="let project of projects">
+        {{ project.link }}
+      </li>
+    </ul>
+  </div>
 </div>
