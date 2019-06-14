@@ -22,7 +22,7 @@
     <h3>Projects</h3>
     <ul class="project-links">
       <li *ngFor="let project of projects">
-        {{ project.link }}
+        <a [href]="project.link">{{ project.link }}</a>
       </li>
     </ul>
   </div>
